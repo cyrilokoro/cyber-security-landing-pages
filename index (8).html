@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureNet Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            background-color: #050A1A;
+            color: #E0E8FF;
+        }
+        header {
+            background-color: #050A1A;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+        }
+        nav a {
+            color: #E0E8FF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #00FFF7;
+            text-shadow: 0 0 8px #00FFF7;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle at center, #0B122E, #050A1A);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #00FFF7;
+            text-shadow: 0 0 10px #00FFF7, 0 0 20px #00FFF7;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #A0B0FF;
+        }
+        .cta-button {
+            padding: 12px 25px;
+            background-color: transparent;
+            color: #00FFF7;
+            border: 2px solid #00FFF7;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-shadow: 0 0 8px #00FFF7;
+        }
+        .cta-button:hover {
+            background-color: #00FFF7;
+            color: #050A1A;
+            box-shadow: 0 0 20px #00FFF7;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #FF00FF;
+            text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px #00FFF7;
+        }
+        .testimonial {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-style: italic;
+            border: 1px solid rgba(255, 0, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+        }
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            background-color: transparent;
+            color: #E0E8FF;
+            font-size: 1rem;
+            box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+        }
+        input[type="submit"] {
+            background-color: transparent;
+            border: 2px solid #FF00FF;
+            color: #FF00FF;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            text-shadow: 0 0 8px #FF00FF;
+        }
+        input[type="submit"]:hover {
+            background-color: #FF00FF;
+            color: #050A1A;
+            box-shadow: 0 0 20px #FF00FF;
+        }
+        footer {
+            background-color: #050A1A;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            border-top: 1px solid rgba(0, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="SecureNet Solutions Logo" style="height:60px;">
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="logo.png" alt="SecureNet Solutions Full Logo" style="max-width:600px; display:block; margin:auto;">
+    <h1>Protecting Your Digital World</h1>
+    <p>Cutting-edge cyber security solutions to safeguard your data, prevent breaches, and ensure digital peace of mind.</p>
+    <button class="cta-button">Get Secured Now</button>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>At SecureNet Solutions, we specialize in identifying vulnerabilities before attackers can exploit them. With over a decade of combined experience in penetration testing, threat analysis, and digital forensics, our team ensures that your systems are resilient against the ever-evolving cyber threat landscape.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3 style="color:#00FFF7;">Penetration Testing</h3>
+            <p>Simulated cyber-attacks to identify and fix vulnerabilities before criminals find them.</p>
+        </div>
+        <div class="service-card">
+            <h3 style="color:#00FFF7;">Vulnerability Assessment</h3>
+            <p>Comprehensive scans and reports to strengthen your systems’ defenses.</p>
+        </div>
+        <div class="service-card">
+            <h3 style="color:#00FFF7;">Incident Response</h3>
+            <p>Rapid containment and investigation of security breaches to minimize damage.</p>
+        </div>
+        <div class="service-card">
+            <h3 style="color:#00FFF7;">Security Awareness Training</h3>
+            <p>Educating employees on safe online practices and social engineering prevention.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">"SecureNet Solutions helped us identify critical vulnerabilities before launch. Highly professional." — Alex R., Tech Startup Founder</div>
+    <div class="testimonial">"Thanks to their training, our staff is more aware and proactive about cyber threats." — Jamie L., Operations Manager</div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="_replyto" placeholder="Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+
+<footer>
+    © 2025 SecureNet Solutions — All Rights Reserved | Privacy Policy | Terms of Service
+</footer>
+
+</body>
+</html>
